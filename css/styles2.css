@@ -1,0 +1,235 @@
+/* Global Layout Set-up */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #222;
+    background: #f7f5f0;
+    
+  }
+  /* Link Styles */
+  
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  a:hover {
+    color: #6633ff;
+  }
+  
+  /* Section Styles */
+  
+  .main-nav {
+    width: 100%;
+    background: rgb(255, 254, 254);
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+  }
+  .nav a {
+    transition: all 0.5s;
+  }
+  .nav a:hover {
+    color: white;
+  }
+  
+  header {
+    /* text-align: center; */
+    /* background: url("images/wepik-2022015-20565.png") no-repeat center center; */
+    /* background-size: cover; */
+    /* overflow: hidden; */
+    padding-top: 5px;
+  }
+  /* header {
+    line-height: 2.0;
+  } */
+
+  .card{
+    overflow: hidden;
+    /* margin-top: 30px; */
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 0;
+    padding: 1em;
+    border: 0.5px solid rgba(136, 132, 135, 0.511);
+    border-radius: 7px;
+    /* text-align: center; */
+    /* color:rgb(195, 42, 149); */
+  }
+  .card>h2{
+    text-align: center;
+  }
+  
+  .card:hover {
+    border-color: #f8e431f3;
+  }
+  fieldset{
+    border: none;
+    color: rgb(93, 90, 92);
+    /* color:rgb(195, 42, 149); */
+}
+.card input, textarea {
+  margin: 0.7em;
+  width: 100%;
+  height: 3em;
+}
+.card select{
+  margin: 0.7em;
+  width: 30%;
+  height: 3em;
+}
+.button:hover{
+  background-color:#f8e43134 ;
+  transition: 0.5s;
+  font-size: medium;
+}
+  /* h2{text-align: center;} */
+  /* p.form{text-align: center;} */
+  
+/* .question{
+  margin: auto;
+  display: table;
+} */
+
+/* input{
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  
+}
+textarea{
+  width: 400px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+
+}
+button{
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  margin: auto;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background: rgba(109, 108, 108, 0.925); color: white;
+  transition: all 0.5s;
+  
+}
+button:hover{
+  font-size: 17px ;
+} */
+
+
+  footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
+    text-align: center;
+  }
+  
+  footer .copyright {
+    top: -8px;
+    font-size: 0.75em;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+  }
+  
+  a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    transition: all 0.5s;
+  }
+  a.twitter {
+    background-image: url(images/twitter.png);
+  }
+  a.linkedin {
+    background-image: url(images/linkedin.png);
+  }
+  a.github {
+    background-image: url(images/github.png);
+  }
+  a.social:hover {
+    opacity: 1;
+  }
+  .clearfix {
+    clear: both;
+  }
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    .flex {
+      display: -ms-flexbox; /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
+  
+    header {
+      min-height: 100px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px;
+    }
+  
+    main {
+      padding-top: 20px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  }
+  

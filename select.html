@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Select a Query in a Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-nav">
+    <ul class="nav">
+      <li class="name">EMILIA NGUYEN HOANG </li>
+      <li><a href="index.html">HOME</a>
+      <li><a href="insert.html">INSERT</a></li>
+      <li><a href="update.html">UPDATE</a></li>
+      <li><a href="delete.html">DELETE</a></li>
+      <li><a href="select.html">SELECT</a></li>
+  
+    </ul>
+  </div>
+  <header></header>
+  <div class="card">
+    <h2>Display All Parents</h2>
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <h2>Display Parents whose name starts with</h2>
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <label>Parent Name Starts with</label>
+        <input type="text" name="fname" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <h2>Display Parents With a Specific Marital Status</h2>
+    <form method="post" action="php/selectWhereQuery.php">
+      <fieldset>
+        <label>Marital Status</label> <input type="text" name="status" /> <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>      
+  </div>
+  
+  <footer>
+    <ul>
+      <li>
+        <a href="https://twitter.com/EmiliaHoang84" class="social twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/emilia-hoang" class="social linkedin">Stackoverflow</a>
+      </li>
+      <li>
+        <a href="https://github.com/emilia84" class="social github">Github</a>
+      </li>
+    </ul>
+    <p class="copyright">Copyright 2022| Emilia Nguyen Hoang</p>
+  </footer>
+</body>
+</html>

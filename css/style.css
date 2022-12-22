@@ -1,0 +1,33 @@
+﻿/*Saeed Mirjalili*/
+
+ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+label {
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+a {
+    display:inline-block;
+    padding: 12px 20px;
+    background: navy;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+table {
+    margin: 15px;
+}
